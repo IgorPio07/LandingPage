@@ -1,0 +1,269 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #761BEF;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+
+.header{
+    top:0;
+    left:0;
+    width: 100%;
+    padding-top: 0%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1000;
+}
+
+
+.logo img{
+    max-width: 9rem;
+    max-height: 9rem;
+    width: auto;
+    height: auto;
+}
+
+.navbar a{
+    position: relative;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #DBDAD9;
+    font-weight:900;
+    margin-left: 40px;
+}
+
+.navbar a::before{
+    content:'';
+    position:absolute;
+    top:100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #DBDAD9;
+    transition: .3s;
+}
+
+.navbar a:hover:before{
+    width:100%
+
+}
+
+/*Corpo*/
+
+.bdycontainer{
+    background-color: #DBDAD9;
+    color: #761BEF;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.att_holder{
+    max-width: 600px;
+    margin: 0 auto;
+}
+.att_holder h1{
+    font-size: 2rem;
+}
+.att_holder span{
+    font-size: 1.2rem;
+}
+
+.btn{
+    font-size: 1.3rem;
+    display: inline-block;
+    background-color: #761BEF;
+    color: #DBDAD9;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #303030;
+  }
+  
+.filosofias {
+    padding: 50px 20px;
+    background-color: #8BF67E;
+    color: #303030;
+    text-align: center;
+}
+
+.filosofia-lista{
+ display:flex;
+ align-items: center;
+ justify-content: space-around;
+ max-width: 800px;
+ margin: 0 auto;
+}
+
+.filosofia{
+    flex:1;
+    padding: 20px;
+    margin: 10px;
+    background-color: #DBDAD9;
+    border-radius: 5px;
+    font-size: large;
+}
+
+footer{
+    display: flex;
+    background-color: #303030;
+    color: #DBDAD9;
+    text-align: center;
+    padding-top: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+}
+
+.icons .icon{
+    margin-right: 10px;
+}
+.icons .icon img{
+    width:20px;
+    height: 20px;
+}
+.copyright{
+    align-self: flex-end;
+}
+
+/*Quem somos*/
+
+.corpo{
+    background-color: #DBDAD9;
+    color: #303030;
+    padding: 50px 20px;
+    text-align: center;
+    margin-inline: 3rem;
+    border-radius: 10px;
+    border-bottom: solid;
+    border-right: solid;
+}
+
+.descricao{
+    max-width: 600px;
+    margin: 0 auto;
+}
+.descricao h1{
+    padding-bottom: 10px;
+}
+
+.descricao img{
+    max-width: 120px;
+}
+.membros{
+    margin-top: 10px;
+    padding: 50px 20px;
+    margin-inline: 3rem;
+    text-align: center;
+    color: #303030;
+    background-color: #8BF67E;
+    border-radius: 10px;
+    border-bottom: solid;
+    border-right: solid;
+    margin-bottom: 10px;
+}
+
+.membros-lista{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 800px;
+    margin: auto;
+}
+
+.membro{
+    flex: 1 0 250px;
+    padding: 20px;
+    margin: 10px;
+    background-color: #DBDAD9;
+    border-radius: 5px;
+    font-size: large;
+    overflow: hidden;
+    border-bottom: solid;
+    border-right: solid;
+}
+.membro img{
+    border-radius: 50%;
+}
+
+/*Projetos*/
+.projetos{
+    margin-top: 10px;
+    padding: 50px 20px;
+    margin-inline: 3rem;
+    color: #303030;
+    background-color: #8BF67E;
+    border-radius: 10px;
+    border-bottom: solid;
+    border-right: solid;
+    margin-bottom: 10px;
+}
+.projetos-lista{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 800px;
+    margin: auto;
+}
+.projetos-lista{
+    margin-top: 20px;
+}
+.projeto{
+    flex: 1 0 250px;
+    padding: 20px;
+    margin: 10px;
+    background-color: #DBDAD9;
+    border-radius: 5px;
+    font-size: large;
+    overflow: hidden;
+    border-bottom: solid;
+    border-right: solid;
+}
+.projeto img{
+    max-width: 100vh;
+}
+.fixed-bottom{
+    top: -1;
+}
+
+/*Orçamento*/
+.divForms{
+    height: 100vh;
+    font-size: large;
+}
+.form{
+    margin-top: 7rem;
+    margin-inline: 10rem;
+    background-color: #8BF67E;
+    padding: 50px 20px;
+    border-radius: 10px;
+}   
+.form input{
+    border-radius: 4px;
+    border: solid 1.5px;
+
+}
+
+.form textarea{
+    border-radius: 4px;
+    border: solid 1.5px;
+}
