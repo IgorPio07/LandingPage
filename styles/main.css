@@ -58,26 +58,28 @@ body{
 }
 
 /*Corpo*/
-
-.bdycontainer{
+.bdycontainer {
     background-color: #DBDAD9;
     color: #761BEF;
     padding: 50px 20px;
     text-align: center;
+    height: 37vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.att_holder{
-    max-width: 600px;
-    margin: 0 auto;
-}
-.att_holder h1{
+/* Estilo para h1 e span */
+
+.att_holder h1 {
     font-size: 2rem;
 }
-.att_holder span{
+.att_holder span {
     font-size: 1.2rem;
 }
 
-.btn{
+/* Estilo para botão */
+.btn {
     font-size: 1.3rem;
     display: inline-block;
     background-color: #761BEF;
@@ -87,28 +89,35 @@ body{
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
-
 .btn:hover {
     background-color: #303030;
-  }
-  
+}
+
+/* Estilo para filosofias */
 .filosofias {
     padding: 50px 20px;
     background-color: #8BF67E;
     color: #303030;
     text-align: center;
+    height: 50vh; /* 100% da altura da viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: px;
 }
 
-.filosofia-lista{
- display:flex;
- align-items: center;
- justify-content: space-around;
- max-width: 800px;
- margin: 0 auto;
+/* Estilo para filosofia-lista */
+.filosofia-lista {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.filosofia{
-    flex:1;
+/* Estilo para filosofia individual */
+.filosofia {
+    flex: 1;
     padding: 20px;
     margin: 10px;
     background-color: #DBDAD9;
@@ -121,9 +130,12 @@ footer{
     background-color: #303030;
     color: #DBDAD9;
     text-align: center;
-    padding-top: 10px;
+    padding: 10px 20px;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
 
 .icons{
@@ -176,7 +188,7 @@ footer{
     border-radius: 10px;
     border-bottom: solid;
     border-right: solid;
-    margin-bottom: 10px;
+    margin-bottom: 3rem;
 }
 
 .membros-lista{
@@ -239,31 +251,53 @@ footer{
     border-right: solid;
 }
 .projeto img{
-    max-width: 100vh;
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    max-height: 300px;
 }
 .fixed-bottom{
     top: -1;
 }
 
 /*Orçamento*/
-.divForms{
-    height: 100vh;
+.corpoOrc {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DBDAD9;
+    color: #303030;
+    padding: 20px;
+    text-align: center;
+    margin: 0 3rem;
+    border-radius: 10px;
+    border-bottom: solid;
+    border-right: solid;
+    overflow: auto;
+}
+
+/* Estilo para a divForms */
+.divForms {
+    width: 100%;
+    max-width: 800px;
     font-size: large;
 }
-.form{
-    margin-top: 7rem;
-    margin-inline: 10rem;
-    background-color: #8BF67E;
-    padding: 50px 20px;
-    border-radius: 10px;
-}   
-.form input{
-    border-radius: 4px;
-    border: solid 1.5px;
 
+/* Estilo para o form */
+.form {
+    margin-top: 2rem;
+    background-color: #8BF67E;
+    padding: 20px;
+    border-radius: 10px;
 }
 
-.form textarea{
+/* Estilo para inputs e textarea */
+.form input, .form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
     border-radius: 4px;
     border: solid 1.5px;
 }
